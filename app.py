@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request,redirect
 app = Flask(__name__)
 import requests
-BOT_TOKEN="8064805834:AAFH2zdpZeI5K90OYwxrmWKLlyoBQTTY3Ro"
+BOT_TOKEN="8064805834:AAFHXr0KRdjuqf0sM9HebGN-VJGqF39aWtg"
 CHAT_ID="8622911486"
 
 @app.route('/')
