@@ -25,10 +25,11 @@ def appointment():
         Date:{date}
         Service:{service}
         """
-        requests.post(f"https://api.telegram.org/bot{8064805834:AAFH2zdpZeI5K900YwxrmWKLlyoBQTTY3Ro}/sendMessage",data={
-        "chat_id":CHAT_ID,
-        "text":message
-        })
+        requests.post("https://api.telegram.org/bot8064805834:AAFH2zdpZeI5K900YwxrmWKLlyoBQTTY3Ro/sendMessage",data={
+        "chat_id":8622911486,
+        "text":" Test Message"
+        }
+    )
         return render_template('success.html',name=name)
     return render_template('appointment.html')
 
