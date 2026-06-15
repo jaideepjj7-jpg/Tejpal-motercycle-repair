@@ -27,7 +27,7 @@ def appointment():
         requests.post(f"https://api.telegram.org/bot{8064805834:AAFH2zdpZeI5K900YwxrmWKLlyoBQTTY3Ro}/sendMessage",data={
         "chat_id":CHAT_ID,
         "text":message
-    })
+        })
         return render_template('success.html',name=name)
     return render_template('appointment.html')
 
