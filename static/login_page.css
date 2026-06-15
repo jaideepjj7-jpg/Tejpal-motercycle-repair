@@ -1,0 +1,92 @@
+#navbar{
+    margin:15px 15px 15px 15px;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 15px;
+    box-shadow:0px 0px 15px gray;
+    display: inline;
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    right: 20px;
+    background-color: #D2DCB6;
+}
+.navbarele{
+    margin: 15px;
+}
+marquee{
+    margin-top: 80px;
+    width: 80%;
+    align-self: center;
+    height: 20px;
+}
+#shop_photo{
+    margin: 15px 15px 15px 15px;
+    height:300px;
+    width: 80%;
+    align-items: center;
+    size-adjust: cover;
+    right: 20px;
+    left: 20px;
+    top: 15px;
+    
+}
+.bold{
+    margin: 90px 20px 0px 20px;
+    top: 70px;
+    left: 20px;
+    right: 20px;
+    align-content: center;
+}
+#owner_photo{
+    margin:15px 0px 0px 15px;
+    height:600px;
+    width: 50%;
+    size-adjust: cover;
+}
+#owner{
+    display: inline;
+    width: 80%;
+    height: 800px;
+}
+hr{
+    width:"80%";
+    height:"5px";
+}
+.moters{
+    width: 49%;
+    height:700px;
+    size-adjust: cover;
+    display: inline;
+    border-radius: 30px;
+    padding-left: 4px;
+}
+#moters{
+    display: inline;
+}
+body{
+    background-color:#F1F3E0;
+}
+.ha{
+    font-style: italic;
+    animation: 3s ease-in-out 0s 1 normal size1;
+}
+@keyframes size1 {
+    from{
+        transform:translateX(-600px);
+    }
+    to{
+        transform:translateX(0px);
+    }
+}
+.he{
+        animation: 3s ease-in-out 0s 1 normal size;
+}
+@keyframes size {
+    from{
+        transform:translateX(60px);
+    }
+    to{
+        transform:translateX(0px);
+    }
+}
