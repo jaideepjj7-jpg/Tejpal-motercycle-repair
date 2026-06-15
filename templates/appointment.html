@@ -1,0 +1,45 @@
+<!<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>about us</title>
+        <link rel="stylesheet"href="{{url_for('static',filename= 'appointment.css') }}">
+    </head>
+    <body>
+        <div id="navbar">
+            <b>
+                <b class="navbarele">Tejpal moter cycle.com</b>
+                <a href="/" class="navbarele"><u>HOME</u></a>
+                <a href="/about"class="navbarele">ABOUT US</a>
+                <a href="/appointment"class="navbarele">BOOK APPOINTMENT</a>
+            </b>
+        </div><br><br><br>
+        <h1 align="center" class="right">BOOK APPOINTMENT</h1>
+        <h3 align="center" class="right">Fill the following to book appointment</h3>
+        <hr>
+        <form action="/appointment" method="POST">
+            ENTER NAME: <input type="text" name="name"placeholder="Enter name" maxlength="20"><br><br>
+            ENTER MOBILE NUMBER: <input type="text" name="phone"placeholder="Enter mobile no." maxlength="10"><br><br>
+            <b class="right">NOTE: Shop is closed every Sunday.</b><br><br>
+            SELECT DATE: <input type="text" name="date" placeholder="date-month"maxlength="5"><br><br>
+            ENTER SERVICE: <input type="text"name="service"placeholder="Enter service"><br><br>
+            <hr>
+                    <h2 class="right">We provide repair and maintenance services for : </h2>
+            <ul type="circle"class="right">
+                <li>motercycles</li>
+                <li>Scooter</li>
+                <li>Honda Activa</li>
+                <li>General two-wheeler servicing</li>
+                <li>Engine repair and maintenance</li>
+                <li>Oil changing and basic checkup</li>
+                <li>Other</li>
+            </ul>
+            <hr>
+            <center>
+                <input type="submit" class="button">
+                <input type="reset" class="button">
+            </center>
+            <hr>
+            
+        </form>
+    </body>
+</html>

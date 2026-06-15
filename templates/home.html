@@ -1,0 +1,42 @@
+<!<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>about us</title>
+        <link rel="stylesheet"href="{{url_for('static',filename= 'login_page.css') }}">
+    </head>
+    <body>
+        <div id="navbar">
+            <b>
+                <b class="navbarele">Tejpal moter cycle.com</b>
+                <a href="/" class="navbarele"><u>HOME</u></a>
+                <a href="/about"class="navbarele">ABOUT US</a>
+                <a href="/appointment"class="navbarele">BOOK APPOINTMENT</a>
+            </b>
+        </div>
+        <center>
+            <hr>
+            <marquee>welcome dear coustomer to our website </marquee><br>
+            <b class="he">if you want to get any of your two-wheelers repaired,you can come to us</b>
+            <p class="he"><b align='center'>Here you can book your appointment .You can get any work done on your motercycle or scooter from us.</b></p><br>
+            <b class="ha">YOU CAN BOOK APPOINTMENT FROM APPOINTMENT TAB.</b>
+            <h1 class="ha">PICTURE OF SHOP</h1><br>
+            <img src="{{url_for('static',filename='shop.jpg')}}" id="shop_photo"><br>
+            <hr><br>
+        </center>
+        <center>
+        <div class="owner">
+            <h1 class="ha">NOW LETS TALK ABOUT SHOP OWNER</h1><br>
+            <p class="he"><mark><b>TEJWINDER SINGH</b></mark> is the owner of this shop. He is very professional worker. His picture is given below.To get more information about shop owner go to about us tab.</p><br>
+            <h1 class="ha">PHOTO OF SHOP OWNER </h1>
+            <img src="{{url_for('static',filename='shop_owner.jpg')}}" id="owner_photo"><br>
+            <hr>
+        </div>
+        </center>
+        <div id="moters">
+            <b><p class="he">You can get your two-wheelers like : scooter and motercycle fixed from us</p></b>
+            <img src="{{url_for('static',filename='motercycle.jpg')}}" class="moters">
+            <img src="{{url_for('static',filename='scooter.jpg')}}" class="moters">
+        </div>
+        <hr>
+    </body>
+</html>
