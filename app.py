@@ -1,0 +1,31 @@
+from flask import Flask,render_template,request,redirect
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template("home.html")
+    
+@app.route('/about')
+def about ():
+    return render_template("about.html")
+    
+@app.route('/appointment', methods=["GET","POST"])
+def appointment():
+    if request.method== "POST" :
+        name=request.form.get("name")
+        phone=request.form.get("phone")
+        date=request.form.get("date")
+        service=request.form.get("service")
+        print(name)
+        print(phone)
+        print(date)
+        print(service)
+        return render_template('success.html',name=name)
+    return render_template('appointment.html')
+
+@app.route('/success')
+def success():
+    return render_template('success.html',name=name)
+
+if __name__ == '__main__':
+    app.run(debug=True)
