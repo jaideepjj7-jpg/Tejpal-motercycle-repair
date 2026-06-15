@@ -5,17 +5,9 @@ BOT_TOKEN="8064805834:AAFH2zdpZeI5K900YwxrmWKLlyoBQTTY3Ro"
 CHAT_ID="8622911486"
 
 def send_telegram_message(name,phone,date, service):
-    message=f"""Appointment Booked
-    Name: {name}
-    Phone:{phone}
-    Date:{date}
-    Service:{service}
-    """
-    url=f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-    requests.post(url,data={
-        "chat_id":CHAT_ID,
-        "text":message
-    })
+    
+    url=
+    requests.post(url,
 
 @app.route('/')
 def home():
@@ -32,11 +24,16 @@ def appointment():
         phone=request.form.get("phone")
         date=request.form.get("date")
         service=request.form.get("service")
-        print(name)
-        print(phone)
-        print(date)
-        print(service)
-        send_telegram_message(name,phone,date, service)
+        message=f"""Appointment Booked
+        Name: {name}
+        Phone:{phone}
+        Date:{date}
+        Service:{service}
+        """
+        requests.post(f"https://api.telegram.org/bot{8064805834:AAFH2zdpZeI5K900YwxrmWKLlyoBQTTY3Ro}/sendMessage",data={
+        "chat_id":CHAT_ID,
+        "text":message
+    })
         return render_template('success.html',name=name)
     return render_template('appointment.html')
 
