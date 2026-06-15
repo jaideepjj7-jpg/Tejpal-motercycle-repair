@@ -3,11 +3,6 @@ app = Flask(__name__)
 BOT_TOKEN="8064805834:AAFH2zdpZeI5K900YwxrmWKLlyoBQTTY3Ro"
 CHAT_ID="8622911486"
 
-def send_telegram_message(name,phone,date, service):
-    
-    url=
-    requests.post(url,
-
 @app.route('/')
 def home():
     return render_template("home.html")
