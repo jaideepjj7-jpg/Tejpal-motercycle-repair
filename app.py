@@ -1,6 +1,5 @@
 from flask import Flask,render_template,request,redirect
 app = Flask(__name__)
-import requests
 BOT_TOKEN="8064805834:AAFH2zdpZeI5K900YwxrmWKLlyoBQTTY3Ro"
 CHAT_ID="8622911486"
 
